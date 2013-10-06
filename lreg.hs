@@ -6,8 +6,8 @@ multpr (x,y) = x * y
 exppr :: (Floating a) => (a,a) -> a
 exppr (x,y) = x * x
 
-lreg :: (Floating a) => a -> [(a,a)] -> a
-lreg x xs = let n = fromIntegral( length xs )
+lReg :: (Floating a) => a -> [(a,a)] -> a
+lReg x xs = let n = fromIntegral( length xs )
                 sumx = sum (map fst xs)
                 sumy = sum (map snd xs)
                 sumxy = sum (map multpr xs)
